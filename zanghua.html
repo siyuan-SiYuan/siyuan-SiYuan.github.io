@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>葬花 | 同人游戏网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* 导航样式 */
+        nav {
+            background: rgba(0,0,0,0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ff9d;
+        }
+
+        /* 主视觉 */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('game-bg.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* 游戏特色 */
+        .features {
+            padding: 5rem 2rem;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: #2a2a2a;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* 系统要求 */
+        .requirements {
+            padding: 5rem 2rem;
+            background: #0a0a0a;
+            color: white;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 页脚 */
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #00ff9d;
+            color: #000;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#features">游戏特色</a></li>
+            <li><a href="#requirements">系统要求</a></li>
+            <li><a href="#">下载</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主视觉 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>葬花：转世相遇</h1>
+            <p>愿随此终，今岁今朝今夜，皆与我共</p>
+            <a href="#download" class="cta-button">立即下载</a>
+        </div>
+    </section>
+
+    <!-- 游戏特色 -->
+    <section class="features" id="features">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-comments fa-3x"></i>
+                <h3>社区同人</h3>
+                <p>粉丝社区制作，结局不留遗憾</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users fa-3x"></i>
+                <h3>多种结局</h3>
+                <p>由藏下的花编写的五个结局和花散曲终编写的一个结局</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-paint-brush fa-3x"></i>
+                <h3>全新CG（存疑）</h3>
+                <p>如果有机会的话会为几个结局绘制新CG</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 系统要求 -->
+    <section class="requirements" id="requirements">
+        <div class="specs">
+            <div>
+                <h3>最低配置</h3>
+                <ul>
+                    <li>操作系统: Windows 7, Windows 8.1</li>
+                    <li>处理器: Intel Core i3 2.00 GHz 或 AMD A10</li>
+                    <li>内存: 4 GB RAM</li>
+                </ul>
+            </div>
+            <div>
+                <h3>推荐配置</h3>
+                <ul>
+                    <li>操作系统: Windows 10</li>
+                    <li>处理器: Intel Core i3 2.00 GHz 或 AMD A10</li>
+                    <li>内存: 8 GB RAM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 肆缘-SiYuan</p>
+    </footer>
+</body>
+</html>
